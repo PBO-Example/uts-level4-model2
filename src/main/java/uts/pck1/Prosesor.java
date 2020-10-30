@@ -28,6 +28,9 @@ public class Prosesor {
 	/*Method toString() akan mengembalikan sebuah string, baca file Readme.md*/
 	
 	
+	/*Silahkan override method clone di sini*/
+	
+	
 	//method ini tidak boleh dihapus atau diubah
 	public boolean equals(Object o){
 		if (o instanceof Prosesor){
@@ -37,7 +40,5 @@ public class Prosesor {
 		return false;
 	}
 	
-	public Object clone(){
-		return new Prosesor(this);
-	}
+	
 }
