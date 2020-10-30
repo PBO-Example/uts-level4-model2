@@ -4,37 +4,45 @@ Baca instruksi yang diberikan dengan baik.
 
 ## Kelas Diagram
 ![Image of UTS Level 4](http://api.puro.del.ac.id/v1/file/3935b2e5636f8f3025ef292c80b9cd48)
->Update program anda pada level 2 sehingga sesuai dengan  kelas diagram di atas. 
+>Update program anda pada level 3 sehingga sesuai dengan  kelas diagram di atas. 
 
->**Perhatikan bahwa, pada level 3 ini, sejumlah atribut diangkat ke kelas Parent.**
+>**Perhatikan bahwa, pada level 4 ini, sejumlah kelas berelasi dengan interface MyInterface.**
 
->**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program kelas Laptop.java yang anda kerjakan pada level 2 sehingga mempunyai relasi dengan kelas Komputer seperti yang ditunjukkan pada kelas diagram di atas.**
+>**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program pada level 3 sehingga mempunyai relasi dengan interface MyInterface seperti yang ditunjukkan pada kelas diagram di atas.**
 
 
 ## Rubrik Penilaian 
-1. **[Poin 30]** test realisasi relasi antara kelas Laptop dan Komputer.
+1. **[Poin 20]** test realisasi relasi antara kelas Laptop dan MyInterface.
 	
 	
 	> Perintah test: 
 	
 	
-		>gradle test --tests TestLaptop.testInheritance
+		>gradle test --tests TestLaptop.testInterfaceI
 
-2. **[Poin 35]** test realisasi method setJenis() dan getJenis() dari kelas Komputer
-
-	
-	> Perintah test: 
-	
-	
-		>gradle test --tests TestLaptop.testGetSetAlamat
-
-3. **[Poin 35]** test realisasi method setUkuranLayar() dan getUkuranLayar() dari kelas Komputer
+2. **[Poin 20]** test realisasi relasi antara kelas Prosesor dan MyInterface.
 
 	
 	> Perintah test: 
 	
 	
-		>gradle test --tests TestLaptop.testGetSetTingkat
+		>gradle test --tests TestLaptop.testInterfaceII
+
+3. **[Poin 30]** test realisasi method clone() pada kelas Prosesor 
+
+	
+	> Perintah test: 
+	
+	
+		>gradle test --tests TestLaptop.testCloneProsesor
+
+4. **[Poin 30]** test realisasi method clone() pada kelas Laptop 
+
+	
+	> Perintah test: 
+	
+	
+		>gradle test --tests TestLaptop.testCloneLaptop
 
 
 
