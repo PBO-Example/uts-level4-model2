@@ -1,6 +1,6 @@
 //Prosesor.java
 package uts.pck1;
-public class Prosesor{
+public class Prosesor implements MyInterface{
 	//atribut
 	private String jenis;
 	private int jmlInti;
@@ -45,5 +45,9 @@ public class Prosesor{
 			return (getJenis().equalsIgnoreCase(p.getJenis()) && getJmlInti()== p.getJmlInti());
 		}
 		return false;
+	}
+	
+	public Object clone(){
+		return new Prosesor(this);
 	}
 }

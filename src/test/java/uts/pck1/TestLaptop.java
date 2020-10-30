@@ -76,6 +76,40 @@ public class TestLaptop {
 	}
 	
 	@Test
+	public void testInterfaceI()
+	{ 
+		 rum = new Laptop();
+		 MyInterface mi=new Laptop(rum);
+		 assertEquals(rum, mi);
+	}
+	@Test
+	public void testInterfaceII()
+	{ 
+		 Prosesor pros = new Prosesor();
+		 MyInterface mi=new Prosesor(pros);
+		 assertEquals(pros, mi);
+	}
+	
+	@ParameterizedTest
+	@MethodSource("rumArray1")
+	public void testCloneProsesor(String jen, int uk, Prosesor pro, double ram, double hdd) {
+		Prosesor rec = new Prosesor(pro);
+		Prosesor rec2 = (Prosesor)rec.clone();
+		assertEquals(rec, rec2);
+		assertNotSame(rec,rec2, "should not point to same Object");
+	}
+	
+	@ParameterizedTest
+	@MethodSource("rumArray2")
+	public void testCloneLaptop(Laptop r) {
+		Laptop rec = new Laptop(r);
+		Laptop rec2 = (Laptop)rec.clone();
+		assertEquals(rec, rec2);
+		assertNotSame(rec,rec2, "should not point to same Object");
+		assertNotSame(rec.getProsesor(),rec2.getProsesor(), "should not point to same Object");
+	}
+	
+	@Test
 	public void testKonstruktorI()
 	{ 
 		 rum = new Laptop();

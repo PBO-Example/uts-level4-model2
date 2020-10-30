@@ -1,6 +1,6 @@
 //Laptop.java
 package uts.pck1;
-public class Laptop extends Komputer{
+public class Laptop extends Komputer implements MyInterface{
 	//atribut
 	private Prosesor prosesor;
 	private double ram;
@@ -82,5 +82,9 @@ public class Laptop extends Komputer{
 			return (getJenis().equalsIgnoreCase(lt.getJenis()) && getUkuranLayar()== lt.getUkuranLayar() && getProsesor().equals(lt.getProsesor()) && getRam()==lt.getRam() &&getHarddisk()==lt.getHarddisk());
 		}
 		return false;
+	}
+	
+	public Object clone(){
+		return new Laptop(this);
 	}
 }
