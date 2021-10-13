@@ -4,7 +4,7 @@ Baca instruksi yang diberikan dengan baik.
 
 ## Kelas Diagram
 ![Image of UTS Level 4](http://api.puro.del.ac.id/v1/file/3935b2e5636f8f3025ef292c80b9cd48)
->Update program anda pada level 3 sehingga sesuai dengan  kelas diagram di atas. 
+>Silahkan menggunakan (menyalin) kode program yang sudah anda hasilkan dari level 3 dan modifikasi sehingga sesuai dengan kebutuhan level 4 ini. 
 
 >**Perhatikan bahwa, pada level 4 ini, sejumlah kelas berelasi dengan interface MyInterface.**
 
